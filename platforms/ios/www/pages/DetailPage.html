@@ -1,0 +1,36 @@
+<script>
+    $.getScript(path + "js/DetailPage.js");
+</script>
+ 
+<header class="bar bar-nav">
+    <a class="icon icon-left-nav pull-left" onclick="currentPage.back();"></a>
+    <h1 class="title">DetailPage</h1>
+</header>
+ 
+<div class="content">
+	<div class="card">
+    <ul class="table-view">
+        <li class="table-view-cell table-view-divider">Name:</li>
+ 
+        <li class="table-view-cell"><input id="name" name="name" type="text"></li>
+ 
+        <li class="table-view-cell table-view-divider">Office Number:</li>
+ 
+        <li class="table-view-cell"><input id="officeNumber" name="officeNumber" type="text"></li>
+ 
+        <li class="table-view-cell table-view-divider">Phone Number:</li>
+ 
+        <li class="table-view-cell"><input id="phoneNumber" name="phoneNumber" type="text"></li>
+ 
+        <li class="table-view-cell table-view-divider">Email:</li>
+ 
+        <li class="table-view-cell"><input id="email" name="email" type="text"></li>
+    </ul>
+   </div>
+   <div class="card" style="margin-bottom:40px;">
+    	<button class="btn btn-positive btn-block" onclick="currentPage.edit();">EDIT USER</button>
+   </div>
+   <div class="card" style="margin-bottom:40px;">
+    	<button class="btn btn-negative btn-block" onclick="currentPage.remove();">REMOVE USER</button>
+   </div> 
+</div>
